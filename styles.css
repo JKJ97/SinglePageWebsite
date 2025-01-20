@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+section {
+    min-height: 100vh;
+    padding: 6rem 2rem 2rem;
+    scroll-margin-top: 4rem;
+}
+
+#koti {
+    background-color: #f0f0f0;
+}
+
+#palvelut {
+    background-color: #e0e0e0;
+}
+
+#tietoa {
+    background-color: #d0d0d0;
+}
+
+#yhteystiedot {
+    background-color: #c0c0c0;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section {
+        padding-top: 12rem;
+    }
+} 
